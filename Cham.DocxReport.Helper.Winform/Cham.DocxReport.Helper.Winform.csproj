@@ -1,0 +1,264 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{F8A60B59-8471-4C65-A397-0B6E6AFED1C2}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Cham.DocxReport.Helper.Winform</RootNamespace>
+    <AssemblyName>Cham.DocxReport.Helper.Winform</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>Client</TargetFrameworkProfile>
+    <FileAlignment>512</FileAlignment>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject />
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.SqlServerCe, Version=3.5.1.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="DocxFieldsEditor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DocxFieldsEditor.Designer.cs">
+      <DependentUpon>DocxFieldsEditor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DocxFields\DataColumnFusionContextMenu.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="DocxFields\DataColumnMainTreeNode.cs" />
+    <Compile Include="DocxFields\DataColumnTreeNode.cs" />
+    <Compile Include="DocxFields\DataSetFusion.cs" />
+    <Compile Include="DocxFields\DataSetFusionExplorer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DocxFields\DataSetFusionExplorer.Designer.cs">
+      <DependentUpon>DataSetFusionExplorer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DocxFields\DataSetTreeNode.cs" />
+    <Compile Include="DocxFields\DataSetTreeView.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="DocxFields\DataTableFusionContextMenu.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="DocxFields\DataTableTreeNode.cs" />
+    <Compile Include="DocxFields\FusionWord.cs" />
+    <Compile Include="DocxFields\ShowDataForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DocxFields\ShowDataForm.Designer.cs">
+      <DependentUpon>ShowDataForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DocxFields\StringFormatEditor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DocxFields\StringFormatEditor.Designer.cs">
+      <DependentUpon>StringFormatEditor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DocxFields\UcBooleanFormatControle.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="DocxFields\UcBooleanFormatControle.Designer.cs">
+      <DependentUpon>UcBooleanFormatControle.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DocxFields\UcCurrencyFormatControle.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="DocxFields\UcCurrencyFormatControle.Designer.cs">
+      <DependentUpon>UcCurrencyFormatControle.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DocxFields\UcDateFormatControle.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="DocxFields\UcDateFormatControle.Designer.cs">
+      <DependentUpon>UcDateFormatControle.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DocxFields\UcIntegerFormatControle.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="DocxFields\UcIntegerFormatControle.Designer.cs">
+      <DependentUpon>UcIntegerFormatControle.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DocxFields\UcNumberFormatControle.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="DocxFields\UcNumberFormatControle.Designer.cs">
+      <DependentUpon>UcNumberFormatControle.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DocxFields\UcPercentageFormatControle.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="DocxFields\UcPercentageFormatControle.Designer.cs">
+      <DependentUpon>UcPercentageFormatControle.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DocxFields\UcStringFormatControle.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="DocxFields\UcStringFormatControle.Designer.cs">
+      <DependentUpon>UcStringFormatControle.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DocxFields\UcTimeFormatControle.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="DocxFields\UcTimeFormatControle.Designer.cs">
+      <DependentUpon>UcTimeFormatControle.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Icons.cs" />
+    <Compile Include="IconsResource.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>IconsResource.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="DocxFieldsEditor.resx">
+      <DependentUpon>DocxFieldsEditor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DocxFields\DataSetFusionExplorer.resx">
+      <DependentUpon>DataSetFusionExplorer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DocxFields\ShowDataForm.resx">
+      <DependentUpon>ShowDataForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DocxFields\StringFormatEditor.resx">
+      <DependentUpon>StringFormatEditor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DocxFields\UcBooleanFormatControle.resx">
+      <DependentUpon>UcBooleanFormatControle.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DocxFields\UcCurrencyFormatControle.resx">
+      <DependentUpon>UcCurrencyFormatControle.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DocxFields\UcDateFormatControle.resx">
+      <DependentUpon>UcDateFormatControle.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DocxFields\UcIntegerFormatControle.resx">
+      <DependentUpon>UcIntegerFormatControle.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DocxFields\UcNumberFormatControle.resx">
+      <DependentUpon>UcNumberFormatControle.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DocxFields\UcPercentageFormatControle.resx">
+      <DependentUpon>UcPercentageFormatControle.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DocxFields\UcStringFormatControle.resx">
+      <DependentUpon>UcStringFormatControle.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DocxFields\UcTimeFormatControle.resx">
+      <DependentUpon>UcTimeFormatControle.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="IconsResource.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>IconsResource.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Cham.DocxReport.Helper.Core\Cham.DocxReport.Helper.Core.csproj">
+      <Project>{DA84CADF-27CB-41F2-9789-C6AF8383EEDA}</Project>
+      <Name>Cham.DocxReport.Helper.Core</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Cham.DocxReport\Cham.DocxReport.csproj">
+      <Project>{E679B2B9-77EF-4ADE-8438-942049AA6FBA}</Project>
+      <Name>Cham.DocxReport</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="IconsFolder\Configuration.png" />
+    <Content Include="IconsFolder\Copy.png" />
+    <Content Include="IconsFolder\Database.png" />
+    <Content Include="IconsFolder\Maintenance.ico" />
+    <Content Include="IconsFolder\Column.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.0,Profile=Client">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4 Client Profile %28x86 and x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.SQL.Server.Compact.3.5">
+      <Visible>False</Visible>
+      <ProductName>SQL Server Compact 3.5 SP2</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.3.1">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 3.1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
